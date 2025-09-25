@@ -13,14 +13,14 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm border-b border-gray-100">
+    <nav className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm border-b border-gray-100 shadow-sm">
       {/*For the Links*/}
       <div className="w-full container mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 md:h-20 h-16 ">
         {/*logo*/}
         <div className="flex items-center gap-1 cursor-pointer">
-          <h2 className="text-2xl">
+          <a className="text-2xl  " href="#home">
             Bella<span className="text-4xl text-pink-600">V</span>erse
-          </h2>
+          </a>
         </div>
 
         {/*Mobile menu*/}
@@ -43,7 +43,7 @@ const Navbar = () => {
               className={`text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-pink-600  after:transition-all ${
                 activeLink === navLink.href
                   ? "text-pink-600 after:w-full"
-                  : "text-gray-600 hover:text-gray-900"
+                  : "text-gray-600 hover:text-pink-900"
               }`}
             >
               {navLink.label}
