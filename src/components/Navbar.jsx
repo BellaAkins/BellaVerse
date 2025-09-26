@@ -10,6 +10,10 @@ const Navbar = () => {
     { href: "#about", label: "About" },
     { href: "#services", label: "Our Services" },
     { href: "#testimonials", label: "Testimonials" },
+    {
+      href: "https://www.blogger.com/u/0/blog/posts/4803124880796227250?hl=en",
+      label: "Let's Talk",
+    },
   ];
 
   return (
@@ -38,23 +42,29 @@ const Navbar = () => {
 
         {/*nav links*/}
         <div className="hidden md:flex items-center gap-10">
-          {navLinks.map((navLink, index) => (
-            <a
-              key={index}
-              href={navLink.href}
-              onClick={() => setActiveLink(navLink.href)}
-              className={`text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-pink-600  after:transition-all ${
-                activeLink === navLink.href
-                  ? "text-pink-600 after:w-full"
-                  : "text-gray-600 hover:text-pink-900"
-              }`}
-            >
-              {navLink.label}
-            </a>
-          ))}
+          {navLinks
+            .filter(
+              (navLink) =>
+                navLink.href !==
+                "https://www.blogger.com/u/0/blog/posts/4803124880796227250?hl=en"
+            )
+            .map((navLink, index) => (
+              <a
+                key={index}
+                href={navLink.href}
+                onClick={() => setActiveLink(navLink.href)}
+                className={`text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-pink-600  after:transition-all ${
+                  activeLink === navLink.href
+                    ? "text-pink-600 after:w-full"
+                    : "text-gray-600 hover:text-pink-600"
+                }`}
+              >
+                {navLink.label}
+              </a>
+            ))}
         </div>
 
-        {/*buttons*/}
+        {/*cta buttons*/}
         <button className="hidden md:block bg-pink-600 text-white px-8 py-2.5 rounded-lg hover:bg-pink-700 text-sm font-medium transition-all hover:shadow-lg hover:shadow-pink-100">
           <a href="https://www.blogger.com/u/0/blog/posts/4803124880796227250?hl=en">
             Let's Talk
@@ -71,7 +81,7 @@ const Navbar = () => {
                 className={`block text-sm font-medium py-2 ${
                   activeLink === navLink.href
                     ? "text-pink-600"
-                    : "text-gray-600 hover:text-gray-900"
+                    : "text-gray-600 hover:text-pink-600"
                 }  `}
                 key={index}
                 href={navLink.href}
