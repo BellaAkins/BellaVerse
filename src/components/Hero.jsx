@@ -20,13 +20,13 @@ const Hero = () => {
           learn, explore, and glow up
         </p>
         {/*input email*/}
-        <div className="flex gap-3 ">
+        <div className="flex gap-3 max-w-md">
           <input
             type="email"
             name="email"
             id="email"
             placeholder="Your Email address"
-            className="flex px-6 py-4 border border-pink-300 rounded-xl focus:outline-none focus:border-pink-600 
+            className="border border-yellow-300 rounded-xl focus:outline-none focus:border-pink-600 
            transition-all"
           />
           <button
