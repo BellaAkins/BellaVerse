@@ -26,11 +26,11 @@ const Hero = () => {
             name="email"
             id="email"
             placeholder="Your Email address"
-            className="flex-1  px-6 py-4 border border-pink-300 rounded-xl focus:outline-none focus:border-pink-600 
+            className="flex-1  px-5 py-4 border border-pink-300 rounded-xl focus:outline-none focus:border-pink-600 
            transition-all"
           />
           <button
-            className="bg-pink-600 text-white px-8 py-4 rounded-2xl hover:bg-pink-700 cursor-pointer
+            className="bg-pink-600 text-white px-6 py-4 rounded-2xl hover:bg-pink-700 cursor-pointer
           transition-all hover:shadow-lg hover:shadow-pink-300 "
           >
             →
