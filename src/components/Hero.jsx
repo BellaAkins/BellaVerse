@@ -20,7 +20,7 @@ const Hero = () => {
           learn, explore, and glow up
         </p>
         {/*input email*/}
-        <div className="flex gap-3 max-w-md">
+        <div className="flex gap-3 ">
           <input
             type="email"
             name="email"
