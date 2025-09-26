@@ -13,7 +13,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm border-b border-gray-100 shadow-sm">
+    <nav className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm z-50 border-b border-gray-100 shadow-sm">
       {/*For the Links*/}
       <div className="w-full container mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 md:h-20 h-16 ">
         {/*logo*/}
@@ -24,14 +24,17 @@ const Navbar = () => {
         </div>
 
         {/*Mobile menu*/}
-        <div className="">
-          <button
-            onClick={() => setMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 "
-          >
-            {isMenuOpen ? <HiX className="size-6" /> : <HiMenu />}
-          </button>
-        </div>
+
+        <button
+          onClick={() => setMenuOpen(!isMenuOpen)}
+          className="md:hidden p-2 "
+        >
+          {isMenuOpen ? (
+            <HiX className="size-6" />
+          ) : (
+            <HiMenu className="size-6" />
+          )}
+        </button>
 
         {/*nav links*/}
         <div className="hidden md:flex items-center gap-10">
