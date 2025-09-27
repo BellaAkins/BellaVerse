@@ -3,7 +3,10 @@ import heroImage from "../assets/hero-image.jpg";
 
 const Hero = () => {
   return (
-    <section className="container mx-auto flex flex-col md:flex-row justify-between items-center pt-34 pb-6 px-4 sm:px-6 lg:px-6">
+    <section
+      className="container mx-auto flex flex-col md:flex-row justify-between items-center pt-34 pb-6 px-4 sm:px-6 lg:px-6"
+      id="home"
+    >
       {/*Left column*/}
       <div className="w-full md:w-1/2 space-y-8">
         <h1 className="text-4xl md:text-5xl lg:text-6xl mb-6 font-bold leading-tight">

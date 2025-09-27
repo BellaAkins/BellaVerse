@@ -8,11 +8,11 @@ const Navbar = () => {
   const navLinks = [
     { href: "#home", label: "Home" },
     { href: "#about", label: "About" },
-    { href: "#services", label: "Our Services" },
+    { href: "#services", label: "Services" },
     { href: "#testimonials", label: "Testimonials" },
     {
       href: "https://www.blogger.com/u/0/blog/posts/4803124880796227250?hl=en",
-      label: "Let's Talk",
+      label: "Dey with Me",
     },
   ];
 
@@ -67,7 +67,7 @@ const Navbar = () => {
         {/*cta buttons*/}
         <button className="hidden md:block bg-pink-600 text-white px-8 py-2.5 rounded-lg hover:bg-pink-700 text-sm font-medium transition-all hover:shadow-lg hover:shadow-pink-100">
           <a href="https://www.blogger.com/u/0/blog/posts/4803124880796227250?hl=en">
-            Let's Talk
+            Dey with Me
           </a>
         </button>
       </div>
