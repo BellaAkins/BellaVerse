@@ -50,3 +50,42 @@ export const services = [
     link: "#learn-more",
   },
 ];
+
+export const testimonials = [
+  {
+    id: 1,
+    name: "Sophia",
+    image: "https://randomuser.me/api/portraits/women/65.jpg",
+    text: "BellaVerse has completely changed the way I approach my career and lifestyle. The advice feels practical and real, not just theory.",
+  },
+  {
+    id: 2,
+    name: "Michael",
+    image: "https://randomuser.me/api/portraits/men/12.jpg",
+    text: "Every BellaVerse post feels like a pep talk from a friend. The career tips keep me focused, and the lifestyle content keeps me sane.",
+  },
+  {
+    id: 3,
+    name: "Chidi",
+    image: "https://randomuser.me/api/portraits/men/19.jpg",
+    text: "BellaVerse just dey burst my brain. The career hacks dey ginger me, and the lifestyle gist dey balance my hustle.",
+  },
+  {
+    id: 4,
+    name: "Fatima",
+    image: "https://randomuser.me/api/portraits/women/45.jpg",
+    text: "I’ve been reading BellaVerse for months now, and honestly, it’s my go-to for motivation. I love how they mix ambition with self-care.",
+  },
+  {
+    id: 5,
+    name: "Amara",
+    image: "https://randomuser.me/api/portraits/women/28.jpg",
+    text: "BellaVerse makes me feel seen. The stories, the tips, the energy—it’s like the blog knows exactly what I need at every stage of my journey.",
+  },
+  {
+    id: 6,
+    name: "Tunde",
+    image: "https://randomuser.me/api/portraits/men/90.jpg",
+    text: "Na BellaVerse dey remind me say life no suppose hard. Career tips dey, lifestyle gist dey—na full package!",
+  },
+];

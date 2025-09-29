@@ -12,6 +12,7 @@ const ServicesSection = () => {
       <div className="flex flex-col md:flex-row items-center justify-between gap-12 lg:gap-24  ">
         {/*header*/}
         <div className="md:w-1/2 w-full">
+          <p className="text-pink-500 font-semibold uppercase">What we offer</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-6 md:w-4/5">
             Stories That Spark, Vibes That Last
           </h2>
