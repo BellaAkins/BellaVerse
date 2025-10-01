@@ -13,9 +13,12 @@ import { Navigation } from "swiper/modules";
 
 const TestimonialsSection = () => {
   return (
-    <section className="py-16 px-4 mx-auto max-w-7xl" id="testimonials">
+    <section
+      className="py-16 px-4 mx-auto max-w-7xl relative"
+      id="testimonials"
+    >
       {/* gradient blob */}
-      <div className="absolute bottom-28 right-28 w-[300px] h-[300px] bg-gradient-to-tr from-red-500/20 to-pink-500/20 rounded-full blur-[80px] -z-10"></div>
+      <div className="absolute bottom-28 right-28 w-[500px] h-[500px] bg-gradient-to-tr from-red-500/20 to-pink-500/20 rounded-full blur-[80px] -z-10"></div>
       {/*heading*/}
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold md:text-4xl mb-4">
@@ -25,7 +28,8 @@ const TestimonialsSection = () => {
             Bella
             <span className="text-4xl text-pink-600 font-normal">V</span>
             erse
-          </span>
+          </span>{" "}
+          Fam
         </h2>
         <p className="text-gray-600">
           We no dey hype ourselves; the squad don already run am🔊
@@ -86,8 +90,8 @@ const TestimonialsSection = () => {
         </Swiper>
 
         {/*arrows*/}
-        <div className="flex justify-center gap-4 md:mt-8">
-          <button className="swiper-button-prev-custom w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center  hover:bg-pink-500 hover:text-white transition-all duration-200">
+        <div className="flex justify-center gap-4 md:mt-8 mt-4">
+          <button className="swiper-button-prev-custom w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center  hover:bg-pink-500 hover:border-0 hover:text-white transition-all duration-200">
             <BsChevronLeft className="size-6   text-pink-300" />
           </button>
           <button className="swiper-button-next-custom w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center hover:bg-pink-500 hover:text-white transition-all duration-200">

@@ -56,9 +56,7 @@ const Navbar = () => {
 
         {/*cta buttons*/}
         <button className="hidden md:block bg-pink-600 text-white px-8 py-2.5 rounded-lg hover:bg-pink-700 text-sm font-medium transition-all hover:shadow-lg hover:shadow-pink-100">
-          <a href="https://www.blogger.com/u/0/blog/posts/4803124880796227250?hl=en">
-            Join the Vibe
-          </a>
+          <a href="#newsletter">Join the Vibe</a>
         </button>
       </div>
 
@@ -83,10 +81,13 @@ const Navbar = () => {
                 {navLink.label}
               </a>
             ))}
-            <button className="w-full bg-pink-600 text-white px-8 py-2.5 rounded-lg hover:bg-pink-700 text-sm font-medium transition-all hover:shadow-lg hover:shadow-pink-100">
-              <a href="https://www.blogger.com/u/0/blog/posts/4803124880796227250?hl=en">
-                Join the Vibe
-              </a>
+            <button
+              className="w-full bg-pink-600 text-white px-8 py-2.5 rounded-lg hover:bg-pink-700 text-sm font-medium transition-all hover:shadow-lg hover:shadow-pink-100 "
+              onClick={() => {
+                setIsMenuOpen(false);
+              }}
+            >
+              <a href="#newsletter">Join the Vibe</a>
             </button>
           </div>
         </div>
