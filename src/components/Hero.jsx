@@ -15,7 +15,7 @@ const Hero = () => {
           variants={textVariant(0.3)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.2 }}
           className="text-4xl md:text-5xl lg:text-6xl mb-6 font-bold leading-tight"
         >
           Life dey happen
@@ -25,11 +25,17 @@ const Hero = () => {
           steady
           <span className="inline-block ml-2 animate-pulse">🌸💡</span>
         </motion.h1>
-        <p className="text-gray-600 text-lg md:text-xl max-w-xl ">
+        <motion.p
+          variants={fadeIn("up", 0.4)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.2 }}
+          className="text-gray-600 text-lg md:text-xl max-w-xl "
+        >
           Because growth isn’t boring—it’s messy, exciting, and full of
           surprises. Here, you’ll find stories, lessons, and ideas that help you
           learn, explore, and glow up
-        </p>
+        </motion.p>
         {/*input email*/}
         <div className="flex gap-3 max-w-md">
           <input

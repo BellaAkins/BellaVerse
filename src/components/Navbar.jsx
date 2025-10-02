@@ -19,7 +19,7 @@ const Navbar = () => {
       variants={fadeIn("down", 0.2)}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true }}
+      viewport={{ once: false, amount: 0.2 }}
       className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm z-50 border-b border-gray-100 shadow-sm"
     >
       {/*For the Links*/}
