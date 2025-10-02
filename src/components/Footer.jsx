@@ -56,6 +56,7 @@ const Footer = () => {
                     <h3 className="text-lg font-medium mb-4 uppercase">
                       {category}
                     </h3>
+                    {/*the links */}
                     <ul className="space-y-3">
                       {Links.map((link, index) => (
                         <li key={index}>

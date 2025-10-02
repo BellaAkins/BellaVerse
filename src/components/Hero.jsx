@@ -1,5 +1,7 @@
 import React from "react";
 import heroImage from "../assets/hero-image.jpg";
+import { motion } from "framer-motion";
+import { fadeIn, slideIn, textVariant } from "../utilities/motion";
 
 const Hero = () => {
   return (
@@ -9,14 +11,20 @@ const Hero = () => {
     >
       {/*Left column*/}
       <div className="w-full md:w-1/2 space-y-8">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl mb-6 font-bold leading-tight">
+        <motion.h1
+          variants={textVariant(0.3)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="text-4xl md:text-5xl lg:text-6xl mb-6 font-bold leading-tight"
+        >
           Life dey happen
           <span className="text-pink-600 inline-block">
             grow, glow, and catch vibes
           </span>{" "}
           steady
           <span className="inline-block ml-2 animate-pulse">🌸💡</span>
-        </h1>
+        </motion.h1>
         <p className="text-gray-600 text-lg md:text-xl max-w-xl ">
           Because growth isn’t boring—it’s messy, exciting, and full of
           surprises. Here, you’ll find stories, lessons, and ideas that help you
@@ -42,15 +50,22 @@ const Hero = () => {
       </div>
 
       {/*Right column*/}
-      <div className="w-full md:w-1/2 mt-16 md:mt-0 pl-0 md:pl-12">
+      {/*Right column*/}
+      <motion.div
+        variants={slideIn("right", "tween", 0.3, 0.8)} // 👈 using slideIn here
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        className="w-full md:w-1/2 mt-16 md:mt-0 pl-0 md:pl-12"
+      >
         <div className="relative">
           <img
             src={heroImage}
-            alt=""
+            alt="Hero visual"
             className="rounded-4xl relative z-10 hover:scale-[1.02] transition-transform duration-300"
           />
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
